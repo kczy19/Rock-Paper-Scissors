@@ -7,13 +7,13 @@ rock = 0
 paper = 1
 scissor = 2
 */
-function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+// function delay(ms) {
+//   return new Promise(resolve => setTimeout(resolve, ms));
+// }
 
 async function update(event) {
   document.getElementById('winner').innerText = 'Thinking...';
-  await delay(2000); // Add a delay of 2 seconds
+  // await delay(2000); // Add a delay of 2 seconds
 
   let clickedButtonID = event.target.id;
   let computerGuess = Math.floor(Math.random() * 3);
